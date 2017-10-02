@@ -209,7 +209,7 @@ Para um programa ser bom deve se levar em consideração dois tópicos:
     * 2° - Ocupa o dobro do espaço;
     * 3° - As metades são independentes, posso fazer em paralelo (Com threads, multiplos processadores)
 
-# Heapsort
+# Heapsort (NÂO CAI NA PROVA)
 
 log(n) / 2 
 

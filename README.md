@@ -241,3 +241,21 @@ Aqui não há vetores auxiliares
     
    
    
+# Exemplos de algoritmos
+
+ >
+celula *Minimo(celula *lst){
+ celula *p, *p_min;
+ int min;
+ p = p_min = lst->seg;
+ if (p != NULL)
+ min = p->conteudo;
+ while (p != NULL) {
+ if (p->conteudo < min) {
+ p_min = p;
+ min = p->conteudo;
+ }
+ p = p->seg;
+ }
+ return p_min;
+}

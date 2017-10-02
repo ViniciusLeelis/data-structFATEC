@@ -169,6 +169,9 @@ O processo de intercalar demora N (Sendo ordem de grandeza N/2)
 
 Este é um processo mais rápido que o processo de inserção e de comparação
 
+É um algoritmo bom para vetores pequenos, mas para grandes vetores terá problemas
+As metades são independentes, podendo ser feitas em paralelo
+
 * Abstração
 
 0° - Receba o vetor
@@ -213,6 +216,8 @@ log(n) / 2
 # Quicksort
 
 Se este processo for feito recursivo, no final hávera o dobro de elementos no vetor
+No entanto, na prática Quicksort é muito rápido, pois ninguem ordena um vetor já ordenado
+
 
 1 2 (2 ^ 2) (2 ^ 4) (2 ^ 8)  (2 ^ 16) == log/2(n)
 
@@ -241,21 +246,44 @@ Aqui não há vetores auxiliares
     
    
    
-# Exemplos de algoritmos
 
- >
-celula *Minimo(celula *lst){
- celula *p, *p_min;
- int min;
- p = p_min = lst->seg;
- if (p != NULL)
- min = p->conteudo;
- while (p != NULL) {
- if (p->conteudo < min) {
- p_min = p;
- min = p->conteudo;
- }
- p = p->seg;
- }
- return p_min;
-}
+# Questões rápidas úteis (retirado do arquivo Estrutura de Dados.pdf criado por Kelvin)
+
+* Problema de remoção.  
+Remover elementos no início do vetor  
+* Problema de Inserção.  
+Inserir elementos no início do vetor  
+* Problema de busca  
+Lado ruim: Necessita de um dobro de
+espaço
+
+* ALGORITIMO DE BUSCA BINÁRIA
+  * Por que aumenta só um passo?
+    R: Porque divide pela metade.
+
+
+* Quando vale a pena ordenar uma lista
+para aplicar a busca binária?
+  R: Quando é possível aplicar n*logN2 após
+a ordenação.
+
+Divide o vetor em dois blocos. De acordo
+com um "pivô" escolhido. A cada vez que
+voce faz esse processo, ele divide o vetor
+em dois. Fazendo um lado ficar certo e o
+outro errado.
+
+
+* Comparar os dois algoritmos: Inserção e
+  Seleção. Qual é pior?
+   Seleção, pois, não leva em conta o lado
+   esquerdo que já está ordenado.
+   Diferentemente do Inserção, que aproveita
+   o lado esquerdo.
+Passagem por Valor e por referencia
+
+* Por que é preciso usar ponteiros na
+função troca?
+  R: Porque eu não conseguiria acessar as
+variáveis locais da main se não fosse
+ponteiro.

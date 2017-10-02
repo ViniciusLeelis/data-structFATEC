@@ -2,7 +2,7 @@
 Um repositório básico que encontra-se uma parte do resumo de Estrutura de Dados (lembrando que foi escrito com meu conhecimento, caso exista falhas, favor corrigir xD)
 
 
-# Revisão |   
+## Revisão |   
  OBS: Esta revisão tem como intuito principal treinar aquilo aprendido em aula e também, promover o conhecimento.  
  OBS²: Tal repositório não possui código-fonte daquilo aprendido em aula (ainda)  
    
@@ -18,7 +18,7 @@ Iremos seguir a seguinte ordem de conteúdo
 8º Buscas em vetores ordenados
 9º Algoritmos Rápidos de ordenação (Mergesort, Quicksort)  
 
-# Recursividade
+## Recursividade
 O conceito de recursividade é extremamente interessante e devemos levar em consideração se a implementação do mesmo é viável.
 Basicamente a ideia principal é chamar a função dentro da própria função sucessivamente, assim fazendo que uma ação cuja necessidade
 seja a repetição, seja chamada sem códigos gigantescos.
@@ -46,14 +46,14 @@ Mas nem sempre ela é viavel, um bom exemplo é no uso do famoso algoritmo de Fi
             dic[n] = fib(n - 1) + fib(n - 2)
          return dic[n]
   
- # Problema de vetores em C
+ ## Problema de vetores em C
    Os vetores em C possui inúmeros problemas, dentre eles: Após definir um tamanho especifico, ele não pode ser alterado(só se for
    criado outro vetor), desempenho reduzido após a adição de mais elementos, aceitam um padrão por vez (um tipo, exemplo: Inteiro).
    Esses problemas fizeram que Estruturas de Dados fossem criadas, dentre elas podendo ser citado: Lista Encadeada, Mergesort e afins.
    Algumas linguagens resolveram tal problema, como exemplo as linguagens híbridas.  
    
    
- # Listas encadeadas (CONCEITO)
+ ## Listas encadeadas (CONCEITO)
   Uma lista encadeada  (= linked list = lista ligada)  é uma seqüência de células; cada célula contém um objeto de algum tipo e o endereço da célula seguinte.   Suporemos nesta página que os objetos armazenados nas células são do tipo int.  A estrutura de cada
 célula de uma tal lista pode ser definida assim:  
    >  struct cel {  
@@ -65,7 +65,7 @@ célula de uma tal lista pode ser definida assim:
   O desempenho para a adição e remoção em listas encadeadas é muito melhor que em Arrays, isso porque não é necessário percorrer toda a lista para a adição e nem para a remoção.
  
     
-  # Listas encadeadas com cabeça:
+  ## Listas encadeadas com cabeça:
    "Lista com cabeça.  O conteúdo da primeira célula é irrelevante: ela serve apenas para marcar o início da lista.  A primeira célula é a cabeça (= head cell = dummy cell) da lista.  A primeira célula está sempre no mesmo lugar na memória, mesmo que a lista fique vazia. O endereço da primeira célula nunca muda.  Digamos que ini é o endereço da primeira célula. Então  ini->prox == NULL  se e somente se a lista está vazia. Para criar uma lista vazia, basta dizer." . Paulo Feofiloff IME- USP
    Vantagens:
    * Não testa lista vazia  
@@ -74,7 +74,7 @@ célula de uma tal lista pode ser definida assim:
    * Sem necessidade de ponteiro pra ponteiro  
    
 
- # Listas encadeadas sem cabeça:
+ ## Listas encadeadas sem cabeça:
    Lista sem cabeça.  O conteúdo da primeira célula é tão relevante quanto o das demais. Nesse caso, a lista está vazia se o endereço de sua primeira célula é NULL.  Para criar uma lista vazia basta fazer
    > celula *ini;  
      ini = NULL;  
@@ -84,16 +84,16 @@ célula de uma tal lista pode ser definida assim:
      * Não é tão eficiente (apesar de ter programadores que preferem tal)  
      
  
- # Filas
+ ## Filas
    O conceito de filas pode ser comparado ao conceito FIFO (O primeiro que entra, é o primeiro que sai), já que é utilizado como array.
    Uma pilha é fixa, ou seja não aumenta e nem diminui, possuindo um valor fixo. O problema de ser fixa pode ser resolvido com as listas
    encadeadas, tornando a estrutura dinâmica, só que a complexidade de implementação é grande.
    
- # Pilhas
+ ## Pilhas
    O conceito de pilhas é chamado assim devido a sua semelhancia com uma pilha de pratos, sua caracteristica é baseada no LIFO (último a entrar, primeiro a sair)
     ?  ? ? /
   
- # Buscas em vetores ordenados
+ ## Buscas em vetores ordenados
    * Busca sequêncial:   
       * No pior caso serão dados N passos  
       * Busca demorada;  
@@ -106,7 +106,7 @@ célula de uma tal lista pode ser definida assim:
       * O algoritimo leva apenas 13 passos, isso porque trabalha dividindo cada passo em 2  
   Anotações retiradas do repositório Gigers.
  
-# Algoritimos de busca
+## Algoritimos de busca
 
 
 * Algoritimos bons:
@@ -161,9 +161,9 @@ célula de uma tal lista pode ser definida assim:
 
 
 
-# Aula - 26/09/2017  // link do repositório de onde foi tirado: https://github.com/Gigers/data-struct   ----------
+#### Aula - 26/09/2017  // link do repositório de onde foi tirado: https://github.com/Gigers/data-struct
 
-# Algoritimos rápidos de ordenação - Mergesort
+### Algoritimos rápidos de ordenação - Mergesort
 
 O processo de intercalar demora N (Sendo ordem de grandeza N/2)
 
@@ -191,7 +191,7 @@ As metades são independentes, podendo ser feitas em paralelo
 6,3,0,7,5,1, 2, 4
 
 
-# Considerações que caem na prova
+## Considerações que caem na prova
 
 A - origem
 B - Destino
@@ -212,11 +212,11 @@ Para um programa ser bom deve se levar em consideração dois tópicos:
     
   
 
-# Heapsort (NÂO CAI NA PROVA)
+### Heapsort (NÂO CAI NA PROVA)
 
 log(n) / 2 
 
-# Quicksort
+### Quicksort
 
 Se este processo for feito recursivo, no final hávera o dobro de elementos no vetor
 No entanto, na prática Quicksort é muito rápido, pois ninguem ordena um vetor já ordenado
@@ -238,7 +238,7 @@ Aqui não há vetores auxiliares
     * 2° - No entanto o Quicksort é muito rápido. Ninguém ordena um vetor ordenado
     * No pior caso n ^ 2, na media log/2(n)
 
-# Conteúdo da prova
+### Conteúdo da prova
 
 * Ordenar por mergesort sem ver o código
 * Heapsort não cai na prova
@@ -250,7 +250,7 @@ Aqui não há vetores auxiliares
    
    
 
-# Questões rápidas úteis (retirado do arquivo Estrutura de Dados.pdf criado por Kelvin)
+### Questões rápidas úteis (retirado do arquivo Estrutura de Dados.pdf criado por Kelvin)
 
 * Problema de remoção.  
 Remover elementos no início do vetor  

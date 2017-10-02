@@ -33,11 +33,31 @@ Mas nem sempre ela é viavel, um bom exemplo é no uso do famoso algoritmo de Fi
   return fib(n-1) + fib(n-2)  
   
   # Problema de vetores em C
-   Os vetores em C possui inúmeros problemas, dentre eles: Após definir um tamanho especifico, ele não pode ser alterado(só se for  
-   criado outro vetor), desempenho reduzido após a adição de mais elementos, aceitam um padrão por vez (um tipo, exemplo: Inteiro).
-   Esses problemas fizeram que Estruturas de Dados fossem criadas, dentre elas podendo ser citado: Lista Encadeada, Mergesort e afins.
-   Algumas linguagens resolveram tal problema, como exemplo as linguagens híbridas.
+   Os vetores em C possui inúmeros problemas, dentre eles: Após definir um tamanho especifico, ele não pode ser alterado(só se for   
+   criado outro vetor), desempenho reduzido após a adição de mais elementos, aceitam um padrão por vez (um tipo, exemplo: Inteiro).  
+   Esses problemas fizeram que Estruturas de Dados fossem criadas, dentre elas podendo ser citado: Lista Encadeada, Mergesort e afins.  
+   Algumas linguagens resolveram tal problema, como exemplo as linguagens híbridas.  
    
-  
+   
+  # Listas encadeadas (CONCEITO)
+  Uma lista encadeada  (= linked list = lista ligada)  é uma seqüência de células; cada célula contém um objeto de algum tipo e o   endereço da célula seguinte.   Suporemos nesta página que os objetos armazenados nas células são do tipo int.  A estrutura de cada   célula de uma tal lista pode ser definida assim:  
+   >  struct cel {  
+       int         conteudo;  
+       struct cel *prox;  
+    } ;  
+ 
+    
+  # Listas encadeadas com cabeça:
+   "Lista com cabeça.  O conteúdo da primeira célula é irrelevante: ela serve apenas para marcar o início da lista.  A primeira célula é a cabeça (= head cell = dummy cell) da lista.  A primeira célula está sempre no mesmo lugar na memória, mesmo que a lista fique vazia. O endereço da primeira célula nunca muda.  Digamos que ini é o endereço da primeira célula. Então  ini->prox == NULL  se e somente se a lista está vazia. Para criar uma lista vazia, basta dizer." . Paulo Feofiloff IME- USP
+   Vantagens:
+   * Não testa lista vazia
+   * Não é tão complexo
+   * Bem mais eficiente
+   * Sem necessidade de ponteiro pra ponteiro
+   
+
+ # Listas encadeadas sem cabeça:
+ 
+    
    
    

@@ -212,19 +212,19 @@ Para um programa ser bom deve se levar em consideração dois tópicos:
     
     Código em python de exemplo:
              </code> 
-                def merge(e, d):  
-                r = []  
-                i, j = 0, 0  
-                while i < len(e) and j < len(d):  
-                    if e[i] <= d[j]:  
-                        r.append(e[i])  
-                        i += 1  
-                    else:  
-                        r.append(d[j])  
-                        j += 1  
-                r += e[i:]  
-                r += d[j:]  
-                return r  
+            def merge(e, d):  
+            r = []  
+            i, j = 0, 0  
+            while i < len(e) and j < len(d):  
+                if e[i] <= d[j]:  
+                    r.append(e[i])  
+                    i += 1  
+                else:  
+                    r.append(d[j])  
+                    j += 1  
+            r += e[i:]  
+            r += d[j:]  
+            return r  
 
             def mergesort(v):  
                 if len(v) <= 1:   

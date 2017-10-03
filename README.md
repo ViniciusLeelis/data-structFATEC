@@ -287,7 +287,7 @@ Inserir elementos no início do vetor
 Lado ruim: Necessita de um dobro de
 espaço
 
-* ALGORITIMO DE BUSCA BINÁRIA
+* ALGORITMO DE BUSCA BINÁRIA
   * Por que aumenta só um passo?
     R: Porque divide pela metade.
 

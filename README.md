@@ -176,19 +176,44 @@ As metades são independentes, podendo ser feitas em paralelo
 
 0° - Receba o vetor
     [6, 7, 4, 0, 2, 1, 5, 3]
+    
 1° - Divide o vetor recebido na metade
     [6, 7, 4, 0]  [2, 1, 5, 3]
+    
 2° - Divide novamente os campos gerados na divisão anterior
     [6, 7] [4, 0] [2, 1] [5, 3]
+    
 3° - Divide novamente os campos gerados na divisão anterior
     [6] [7] [4] [0] [2] [1] [5] [3]
+    
 4° - Junta em pares de dois sorteando os menores
     [6,7] [0, 4] [1,2] [3,5]
-5° - 0, 4 ,6 , 7
+    
+5° - Faça o sort no par 1 + par 2. Assim como par 3 + par 4
+    [0,4,6,7]  [1,2,3,5]
+
+6° - Finalize, ordenando as as duas listas intercaladamente
+    [0,1,2,3,4,5,6,7]
 
 
+Exemplo 2: Teste de mesa realizado pelo professor durante a aula.
 
-6,3,0,7,5,1, 2, 4
+Lista a ser ordenada: [6,3,0,7,5,1,2,4]
+
+[6,3,0,7]  [5,1,2,4]
+
+[6,3]  [0,7]  [5,1]  [2,4]
+
+[6]  [3] [0]  [7]  [5]  [1]  [2]  [4]
+
+[3,6] [0,7] [1,5] [2,4]
+
+[0,3,6,7] [1,2,4,5]
+
+Vetor ordenado: [1,2,3,4,5,6,7]
+
+Vídeo para consulta: https://www.youtube.com/watch?v=XaqR3G_NVoo
+
 
 
 ## Considerações que caem na prova
@@ -212,7 +237,7 @@ Para um programa ser bom deve se levar em consideração dois tópicos:
     
   
 
-### Heapsort (NÂO CAI NA PROVA)
+### Heapsort (NÃO CAI NA PROVA)
 
 log(n) / 2 
 

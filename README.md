@@ -103,18 +103,18 @@ célula de uma tal lista pode ser definida assim:
       * Rápida;  
       * Leva em consideração a estrutura dos dados;  
       * No caso de um valor 2 ^ 1000000  
-      * O algoritimo leva apenas 13 passos, isso porque trabalha dividindo cada passo em 2  
+      * O algoritmo leva apenas 13 passos, isso porque trabalha dividindo cada passo em 2  
   Anotações retiradas do repositório Gigers.
  
-## Algoritimos de busca
+## Algoritmos de busca
 
 
-* Algoritimos bons:
-    * Algoritimos bons utilizam, n * log(base 2) n, isso porque a cada divisão (por 2), terei o log(base 2) de n.  
+* Algoritmos bons:
+    * Algoritmos bons utilizam, n * log(base 2) n, isso porque a cada divisão (por 2), terei o log(base 2) de n.  
 
-* Algoritimos ruins:
-    * Algoritimos ruins acabam trabalhando com N ^ 2, onde N é o tamanho do vetor, assim a busca passa duas vezes, pelo mesmo elemento.
-    * 1° Exemplo de um algoritimo ruim de ordenação (Inserção):
+* Algoritmos ruins:
+    * Algoritmos ruins acabam trabalhando com N ^ 2, onde N é o tamanho do vetor, assim a busca passa duas vezes, pelo mesmo elemento.
+    * 1° Exemplo de um algoritmo ruim de ordenação (Inserção):
         <code> 
    
                  1° Passo: 0, 3, 6, 1, 5, 4, 2, 7
@@ -124,7 +124,7 @@ célula de uma tal lista pode ser definida assim:
                  5° Passo: 0, 1, 3, 4, 5, 6, 7
                  
         </code>
-        * Algoritimo ruim pois tem de passar por todos os elementos várias vezes para funcionar
+        * Algoritmo ruim pois tem de passar por todos os elementos várias vezes para funcionar
     * Abaixo mais um exemplo:
         <code>
    
@@ -137,7 +137,7 @@ célula de uma tal lista pode ser definida assim:
                 7° Passo: 0, 1, 3, 4, 5, 6, 7
                 8° Passo: 0, 1, 2, 3, 4, 5, 6, 7
         </code>
-    * 2° Exemplo de algoritimo ruim de ordenação (Método de seleção):
+    * 2° Exemplo de algoritmo ruim de ordenação (Método de seleção):
         <code>
    
                 1° Passo: 6, 3, 4, 5, 1, 0, 7, 2
@@ -150,10 +150,10 @@ célula de uma tal lista pode ser definida assim:
                 8° Passo: 0, 1, 2, 3, 4, 5, 6, 7
                 
         </code>
-    * Comparar os dois algoritimos. Quem é o pior ?
+    * Comparar os dois algoritmos. Quem é o pior ?
         * R: O de seleção, isso porque ele não leva em consideração o lado esquedo (Já ordenado), apenas o lado direito, e o algoritmo de inserção, considera o lado esquerdo.
     
-    * Todos os algoritimos mostrados até aqui, são algoritimos n ^ 2
+    * Todos os algoritmos mostrados até aqui, são algoritmos n ^ 2
     
     
     Anotações retiradas do repositório Gigers.
@@ -163,7 +163,7 @@ célula de uma tal lista pode ser definida assim:
 
 #### Aula - 26/09/2017  // link do repositório de onde foi tirado: https://github.com/Gigers/data-struct
 
-### Algoritimos rápidos de ordenação - Mergesort
+### Algoritmos rápidos de ordenação - Mergesort
 
 O processo de intercalar demora N (Sendo ordem de grandeza N/2)
 
@@ -223,7 +223,7 @@ Vídeo para consulta: https://www.youtube.com/watch?v=XaqR3G_NVoo
 A - origem
 B - Destino
 
-Este algoritimo é bom porém consome o dobro de memória
+Este algoritmo é bom porém consome o dobro de memória
 
 
 Para um programa ser bom deve se levar em consideração dois tópicos:
@@ -231,8 +231,8 @@ Para um programa ser bom deve se levar em consideração dois tópicos:
 * Quantidade de passos feitas pelo programa
 * Espaço de memória utilizado
 
-* Considerações sobre o algoritimo Mergesort
-    * 1° - Muito mais rápido que os algoritimos de inserção e seleção (N/log(n) < n ^ 2)
+* Considerações sobre o algoritmo Mergesort
+    * 1° - Muito mais rápido que os algoritmos de inserção e seleção (N/log(n) < n ^ 2)
     * 2° - Ocupa o dobro do espaço;
     * 3° - As metades são independentes, posso fazer em paralelo (Com threads, multiplos processadores)
     

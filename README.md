@@ -196,7 +196,9 @@ As metades são independentes, podendo ser feitas em paralelo
     [0,1,2,3,4,5,6,7]
 
 
-Exemplo 2: Teste de mesa realizado pelo professor durante a aula.
+
+
+## Exemplo 2: Teste de mesa realizado pelo professor durante a aula.
 
 Lista a ser ordenada: [6,3,0,7,5,1,2,4]
 

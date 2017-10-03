@@ -130,12 +130,12 @@ célula de uma tal lista pode ser definida assim:
    
                 1° Passo: 6, 3, 4, 5, 1, 0, 7, 2
                 2° Passo: 3, 6
-                3° Passo: 3, 4, 5
+                3° Passo: 3, 4, 6
                 4° Passo: 3, 4, 5, 6
                 5° Passo: 1, 3, 4, 5, 6
                 6° Passo: 0, 1, 3, 4, 5, 6
-                7° Passo: 0, 2, 1, 3, 4, 5, 6
-                8° Passo: 0, 2, 1, 3, 4, 5, 6, 7
+                7° Passo: 0, 1, 3, 4, 5, 6, 7
+                8° Passo: 0, 1, 2, 3, 4, 5, 6, 7
         </code>
     * 2° Exemplo de algoritimo ruim de ordenação (Método de seleção):
         <code>

@@ -121,7 +121,10 @@ célula de uma tal lista pode ser definida assim:
                  2° Passo: 0, 1, 3, 6
                  3° Passo: 0, 1, 3, 5, 6
                  4° Passo: 0, 1, 3, 4, 5, 6
-                 5° Passo: 0, 1, 3, 4, 5, 6, 7
+                 5° Passo: 0, 1, 2, 3, 4, 5, 6
+                 6° Passo: 0, 1, 2, 3, 4, 5, 6, 7
+                 
+                 Exemplo em vídeo: https://www.youtube.com/watch?v=ROalU379l3U
                  
         </code>
         * Algoritimo ruim pois tem de passar por todos os elementos várias vezes para funcionar
